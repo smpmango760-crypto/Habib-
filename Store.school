@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>SchoolLife SMP Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Press Start 2P', cursive;
+      background: url('https://i.ibb.co/zTVS4Ks2/images-2.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background-color: rgba(46, 125, 50, 0.8);
+      padding: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      text-shadow: 2px 2px #000;
+    }
+
+    .store {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .item {
+      background: rgba(0,0,0,0.75);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.8);
+    }
+
+    .item img {
+      width: 100px;
+      margin-bottom: 10px;
+    }
+
+    .item h2 {
+      margin: 10px 0;
+    }
+
+    .item button {
+      background-color: #4caf50;
+      border: none;
+      padding: 10px 20px;
+      color: #fff;
+      font-size: 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.2s, transform 0.2s;
+    }
+
+    .item button:hover {
+      background-color: #388e3c;
+      transform: scale(1.1);
+    }
+
+    .ribbon {
+      position: absolute;
+      top: 10px;
+      left: -5px;
+      background: #e91e63;
+      color: #fff;
+      padding: 5px 10px;
+      font-size: 10px;
+      font-weight: bold;
+      transform: rotate(-15deg);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    }
+
+    section {
+      margin: 30px auto;
+      max-width: 1000px;
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    .rules, .faq, .about, .contact, .featured {
+      background: rgba(0,0,0,0.6);
+      text-align: left;
+    }
+
+    .rules ul {
+      list-style: none;
+      padding: 0;
+      line-height: 1.8;
+    }
+
+    .faq p, .about p, .contact p {
+      line-height: 1.6;
+    }
+
+    footer {
+      padding: 20px;
+      background-color: rgba(0,0,0,0.7);
+      color: #fff;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .store {
+        grid-template-columns: 1fr;
+        padding: 20px;
+      }
+      .item img {
+        width: 80px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    🌍 Welcome to SchoolLife SMP Store 🌍
+  </header>
+
+  <!-- Featured Items -->
+  <section class="featured">
+    <h2>🔥 Featured Items</h2>
+    <p>Check out the hottest items in our store!</p>
+  </section>
+
+  <!-- Store Items -->
+  <section class="store">
+    <!-- পূর্বের ১৯টি আইটেম এখানে থাকবে -->
+    <!-- উদাহরণস্বরূপ ১টি আইটেম -->
+    <div class="item"><img src="https://minecraft.wiki/images/VIP_JE3_BE2.png" alt="VIP Rank"><h2>VIP Rank</h2><p>৳200 BDT</p><button onclick="window.open('https://www.tiktok.com/@senpie_spider0','_blank')">Buy Now</button></div>
+    <div class="item"><img src="https://minecraft.wiki/images/Golden_Apple_JE3_BE2.png" alt="MVP Rank"><h2>MVP Rank</h2><p>৳400 BDT</p><button onclick="window.open('https://www.tiktok.com/@senpie_spider0','_blank')">Buy Now</button></div>
+    <div class="item"><img src="https://minecraft.wiki/images/Chest_JE2_BE2.png" alt="Crate Keys"><h2>Crate Key x5</h2><p>৳100 BDT</p><button onclick="window.open('https://www.tiktok.com/@senpie_spider0','_blank')">Buy Now</button></div>
+    <!-- বাকী আইটেমগুলোও একইভাবে -->
+  </section>
+
+  <!-- Rules Section -->
+  <section class="rules">
+    <h2>📜 Server Rules</h2>
+    <ul>
+      <li>১. অন্য প্লেয়ারকে হেনস্থা বা অপমান করা যাবে না।</li>
+      <li>২. Cheats, Mods বা Exploits ব্যবহার নিষিদ্ধ।</li>
+      <li>৩. কোনরকম griefing বা অন্যের বিল্ড ধ্বংস করা যাবে না।</li>
+      <li>৪. সার্ভারের সকল রিসোর্স শেয়ার করা যাবে না।</li>
+      <li>৫. সকল খেলোয়াড়কে সমান সম্মান দেখাতে হবে।</li>
+    </ul>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq">
+    <h2>❓ FAQs</h2>
+    <p><strong>Q1:</strong> কিভাবে Rank কিনব?<br><strong>A:</strong> উপরের "Buy Now" বাটন ক্লিক করে TikTok অ্যাকাউন্ট থেকে যোগাযোগ করুন।</p>
+    <p><strong>Q2:</strong> কোন বাটন কি দেয়?<br><strong>A:</strong> প্রতিটি আইটেমের বাটন তার ডিটেইল অনুযায়ী সার্ভারে কার্যকর হয়।</p>
+  </section>
+
+  <!-- About Server Section -->
+  <section class="about">
+    <h2>ℹ️ About SchoolLife SMP</h2>
+    <p>SchoolLife SMP একটি মজাদার এবং নিরাপদ Minecraft সার্ভার যেখানে সবাই একসাথে খেলতে পারে। নতুন র‍্যাঙ্ক, ক্রেট এবং স্পেশাল আইটেমগুলো উপভোগ করুন!</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>📧 Contact Us</h2>
+    <p>যোগাযোগ: <a href="mailto:habibbaser528@gmail.com">habibbaser528@gmail.com</a></p>
+    <p>TikTok: <a href="https://www.tiktok.com/@senpie_spider0" target="_blank">@senpie_spider0</a></p>
+  </section>
+
+  <footer>
+    © 2025 SchoolLife SMP
+  </footer>
+</body>
+</html>
